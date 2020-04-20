@@ -1,0 +1,192 @@
+@font-face {
+	font-family: Ubuntu;
+	src: url(Ubuntu.ttf);
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+header {
+	position: absolute;
+	background-color: #FFF;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 6vh;
+	font-family: Arial;
+	font-size: 5vh;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	color: #333;
+	text-align: center;
+	border: 2vh solid #FFF;
+}
+
+.content {
+	position: absolute;
+	background: #0F2027;
+	background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+	background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.content #home {
+	position: absolute;
+	top: 10vh;
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content #home button {
+	position: relative;
+	transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color .2s, color .2s;
+	background-color: rgba(255, 255, 255, 0.1);
+	left: -5%;
+	width: 110%;
+	flex-grow: 1;
+	font-family: Ubuntu;
+	font-size: 5vh;
+	color: #FFF;
+}
+
+.content #home button:hover {
+    transform: scale(1.2, 1.2);
+    background-color: #FFF;
+    color: #222;
+}
+
+.box {
+	position: absolute;
+	background-color: white;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	top: 35%;
+	width: 25%;
+	height: 28%;
+	border-radius: .6em;
+	font-family: Ubuntu;
+	overflow: hidden;
+}
+
+.box .confirm h1 {
+	position: relative;
+	font-size: 2vw;
+	left: 10%;
+}
+
+.box .confirm h2 {
+	position: relative;
+	font-size: 1.2vw;
+	left: 10%;
+	color: #AAA;
+}
+
+.box .confirm button {
+	transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	position: relative;
+	margin-top: 8%;
+	margin-left: 2%;
+	left: 7%;
+	width: 40%;
+	height: 5vh;
+	border-radius: 2em;
+	font-size: 1.3vw;
+	color: #FFF;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.box .confirm button:hover {
+	transform: scale(1.1, 1.1);
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fade-in-l {
+	0% {
+		opacity: 0;
+		transform: translate(10vw, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes fade-out-l {
+	0% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-10vw, 0);
+	}
+}
+
+@keyframes fade-out-u {
+	0% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, -10vh);
+	}
+}
+
+@keyframes blip-out {
+	0% {
+		border-top: 0vh solid #FFF;
+		border-bottom: 0vh solid #FFF;
+	}
+	20% {
+		width: 100%;
+	}
+   	40% {
+   		background-color: #FFF;
+      	height: 0;
+      	top: 50%;
+      	border-top: .3vh solid #FFF;
+      	border-bottom: .3vh solid #FFF;
+   	}
+   	100% {
+   		width: 0;
+      	height: 0;
+      	top: 50%;
+      	border: 0vh solid #FFF;
+      	border-bottom: 0vh solid #FFF;
+   	}
+}
+
+@keyframes grow-in {
+	0% {
+		opacity: 0;
+		top: 50%;
+		height: 0;
+	}
+	100% {
+		opacity: 1;
+		top: 35%;
+		height: 28%;
+	}
+}
