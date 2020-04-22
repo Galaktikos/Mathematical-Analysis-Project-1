@@ -41,6 +41,7 @@ function moveTo(section) {
 		document.getElementById(section + "Start").style.width = "40%";
 		document.getElementById(section + "Start").style.left = "7%";
 		document.getElementById(section + "Continue").style.width = "40%";
+		document.getElementById(section + "Continue").style.left = "auto";
 		document.getElementById(section + "Continue").style.right = "7%";
 	}
 }
