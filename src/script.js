@@ -38,7 +38,8 @@ function moveTo(section) {
 	}, 390);
 
 	if (getCookie(section)) {
-		document.getElementById(section).getElementById().style.animation = "fill-cover 1s ease";
+		document.getElementById(section + "Start").style.width = "40%";
+		document.getElementById(section + "Start").style.left = "7%";
 	}
 }
 
