@@ -37,15 +37,11 @@ function moveTo(section) {
 		document.getElementById(section).style.animation = "grow-in 1s ease";
 	}, 390);
 
-	alert(getCookie(section));
-
 	if (getCookie(section)) {
-		alert("e");
+		document.getElementById(section).getElementById().style.animation = "fill-cover 1s ease";
 	}
 }
 
 function start(section) {
-	alert(getCookie(section));
 	document.cookie = section + "=1;path=/";
-	alert(getCookie(section));
 }
