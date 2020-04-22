@@ -46,5 +46,5 @@ function moveTo(section) {
 }
 
 function start(section) {
-	document.cookie = section + "=1;path=/";
+	document.cookie = section + "=1;;expires=" + new Date(8640000000000000).toUTCString();
 }
