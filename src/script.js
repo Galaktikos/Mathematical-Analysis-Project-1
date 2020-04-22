@@ -35,6 +35,10 @@ function moveTo(section) {
 
 		document.getElementById(section).style.left = "35%";
 		document.getElementById(section).style.animation = "grow-in 1s ease";
+
+		setTimeout(function () {
+			document.getElementById(section + "Confirm").style.opacity = "1";
+		}, 300);
 	}, 390);
 
 	if (getCookie(section)) {
@@ -42,7 +46,8 @@ function moveTo(section) {
 		document.getElementById(section + "Start").style.left = "7%";
 		document.getElementById(section + "Continue").style.width = "40%";
 		document.getElementById(section + "Continue").style.left = "47%";
-	}
+	} else
+		document.getElementById(section + "Continue").style.opacity = "0";
 }
 
 function start(section) {
