@@ -52,4 +52,9 @@ function moveTo(section) {
 
 function start(section) {
 	document.cookie = section + "=1;;expires=" + new Date(8640000000000000).toUTCString();
+	document.getElementById(section + "Confirm").style.opacity = "0";
+}
+
+function back(section) {
+	document.getElementById(section).style.opacity = "0";
 }
