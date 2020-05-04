@@ -53,6 +53,10 @@ function moveTo(section) {
 function start(section) {
 	document.cookie = section + "=1;;expires=" + new Date(8640000000000000).toUTCString();
 	document.getElementById(section + "Confirm").style.opacity = "0";
+	document.getElementById(section).style.width = "60%";
+	document.getElementById(section).style.height = "70%";
+	document.getElementById(section).style.left = "17.5%";
+	document.getElementById(section).style.top = "15%";
 }
 
 function back(section) {
