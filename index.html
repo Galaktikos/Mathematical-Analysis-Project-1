@@ -91,7 +91,7 @@
 					<div id="exponentialEquationStep1" class="step">To start solving an exponential equation, isolate the exponential parts of the equation to one side of the equation.</div>
 					<div id="exponentialEquationStep2" class="step">Take the log of both sides so that you can later remove the x from the exponential.</div>
 					<div id="exponentialEquationStep3" class="step">Move the x from the exponent of 3 to the beginning of the logarithm using the power property.</div>
-					<div id="exponentialEquationStep4" class="step">Isolate the x by dividing the logarithm to the other side of the equation, which can not be simplified further.</div>
+					<div id="exponentialEquationStep4" class="step">Isolate the x by dividing the logarithm to the other side of the equation, which can not be simplified further without creating a decimal.</div>
 					
 					<button id="exponentialEquationNext" onclick="next('exponentialEquation', 4)">Next</button>
 				</div>
@@ -100,7 +100,7 @@
 			<div class="box" id="exponentialEquation2" style="left: 100vw">
 				<div id="exponentialEquation2Confirm" class="confirm">
 					<h1>Exponential Equation 2</h1>
-					<h2>4 Steps</h2>
+					<h2>5 Steps</h2>
 					<button onclick="start('exponentialEquation2')" id="exponentialEquation2Start" style="background-color: rgb(0, 209, 0)">Start</button>
 				</div>
 	
@@ -110,14 +110,42 @@
 					<div id="exponentialEquation2EquationStep3" class="equationStep">2x⋅log<p class="base">5</p>(5)=log<p class="base">5</p>(21)</div>
 					<div id="exponentialEquation2EquationStep4" class="equationStep">2x(1)=log<p class="base">5</p>(21)</div>
 					<div id="exponentialEquation2EquationStep5" class="equationStep">2x=log<p class="base">5</p>(21)</div>
+					<div id="exponentialEquation2EquationStep6" class="equationStep">x=log<p class="base">5</p>(21)÷2</div>
 			
 					<h1>Exponential Equation 2<h2 id="exponentialEquation2Step"></h2></h1>
-					<div id="exponentialEquation2Step1" class="step">To start solving an exponential equation, isolate the exponential parts of the equation to one side of the equation.</div>
-					<div id="exponentialEquation2Step2" class="step">Take the log of both sides so that you can later remove the x from the exponential.</div>
-					<div id="exponentialEquation2Step3" class="step">Move the x from the exponent of 3 to the beginning of the logarithm using the power property.</div>
-					<div id="exponentialEquation2Step4" class="step">Isolate the x by dividing the logarithm to the other side of the equation, which can not be simplified further.</div>
+					<div id="exponentialEquation2Step1" class="step">This exponential equation has all of the exponential parts isolate allready, so we can start by taking the log<p class="base">5</p> of each side.</p></div>
+					<div id="exponentialEquation2Step2" class="step">Again using the power property, the 2x can be removed from the exponential and put in front of the logarithm.</div>
+					<div id="exponentialEquation2Step3" class="step">Since the base of the logarithm is 5 and the value inside it is also 5, the left side can be simplified to 2x(1).</div>
+					<div id="exponentialEquation2Step4" class="step">The left side can then be simplified further to 2x by multiplying by 1.</div>
+					<div id="exponentialEquation2Step5" class="step">log<p class="base">5</p>(21) can then be divided by 2 to isolate x. This cannot be simplified further without creating a decimal.</div>
 					
 					<button id="exponentialEquation2Next" onclick="next('exponentialEquation2', 4)">Next</button>
+				</div>
+			</div>
+
+			<div class="box" id="earthquakeEquation" style="left: 100vw">
+				<div id="earthquakeEquationConfirm" class="confirm">
+					<h1>Earthquake Equation 2</h1>
+					<h2>5 Steps</h2>
+					<button onclick="start('earthquakeEquation')" id="earthquakeEquationStart" style="background-color: rgb(0, 209, 0)">Start</button>
+				</div>
+		
+				<div id="earthquakeEquationLearn" class="learn">
+					<div id="earthquakeEquationEquationStep1" class="equationStep">5<p class="exponent">2x</p>=21</div>
+					<div id="earthquakeEquationEquationStep2" class="equationStep">log<p class="base">5</p>(5<p class="exponent">2x</p>)=log<p class="base">5</p>(21)</div>
+					<div id="earthquakeEquationEquationStep3" class="equationStep">2x⋅log<p class="base">5</p>(5)=log<p class="base">5</p>(21)</div>
+					<div id="earthquakeEquationEquationStep4" class="equationStep">2x(1)=log<p class="base">5</p>(21)</div>
+					<div id="earthquakeEquationEquationStep5" class="equationStep">2x=log<p class="base">5</p>(21)</div>
+					<div id="earthquakeEquationEquationStep6" class="equationStep">x=log<p class="base">5</p>(21)÷2</div>
+				
+					<h1>Earthquake Equation 2<h2 id="earthquakeEquationStep"></h2></h1>
+					<div id="earthquakeEquationStep1" class="step">This exponential equation has all of the exponential parts isolate allready, so we can start by taking the log<p class="base">5</p> of each side.</p></div>
+					<div id="earthquakeEquationStep2" class="step">Again using the power property, the 2x can be removed from the exponential and put in front of the logarithm.</div>
+					<div id="earthquakeEquationStep3" class="step">Since the base of the logarithm is 5 and the value inside it is also 5, the left side can be simplified to 2x(1).</div>
+					<div id="earthquakeEquationStep4" class="step">The left side can then be simplified further to 2x by multiplying by 1.</div>
+					<div id="earthquakeEquationStep5" class="step">log<p class="base">5</p>(21) can then be divided by 2 to isolate x. This cannot be simplified further without creating a decimal.</div>
+						
+					<button id="earthquakeEquationNext" onclick="next('earthquakeEquation', 4)">Next</button>
 				</div>
 			</div>
 		</div>
