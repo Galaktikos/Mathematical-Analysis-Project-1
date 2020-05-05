@@ -10,22 +10,114 @@
 	<body>
 		<div class="content">
 			<div id="home">
-				<button onclick="moveTo('logarithmicEquations')">Logarithmic Equations</button>
-				<button onclick="moveTo('exponentialEquations')">Exponential Equations</button>
-				<button onclick="moveTo('learn')">Logarithmic Equations</button>
-				<button onclick="moveTo('learn')">Logarithmic Equations</button>
+				<button onclick="moveTo('logarithmicEquation')">Logarithmic Equation</button>
+				<button onclick="moveTo('logarithmicEquation2')">Logarithmic Equation 2</button>
+				<button onclick="moveTo('exponentialEquation')">Exponential Equation</button>
+				<button onclick="moveTo('exponentialEquation2')">Exponential Equation 2</button>
+				<button onclick="moveTo('earthquakeEquation')">Earthquake Equation</button>
 			</div>
 
-			<div class="box" id="logarithmicEquations" style="left: 100vw">
-				<div id="logarithmicEquationsConfirm" class="confirm">
-					<h1>Logarithmic Equations</h1>
-					<h2>5 Steps</h2>
-					<button onclick="start('logarithmicEquations')" id="logarithmicEquationsStart" style="background-color: rgb(0, 209, 0)">Start</button>
+			<div class="box" id="logarithmicEquation" style="left: 100vw">
+				<div id="logarithmicEquationConfirm" class="confirm">
+					<h1>Logarithmic Equation</h1>
+					<h2>7 Steps</h2>
+					<button onclick="start('logarithmicEquation')" id="logarithmicEquationStart" style="background-color: rgb(0, 209, 0)">Start</button>
 				</div>
 
-				<div id="logarithmicEquationsLearn" class="learn">
-					<h1>logarithmic Equations</h1><h2>Step <h2 id="logarithmicEquationsStep"></h2></h2>
-					<div id="step 1" class="step"></div>
+				<div id="logarithmicEquationLearn" class="learn">
+					<div id="logarithmicEquationEquationStep1" class="equationStep">log(x)+log(10x)=3</div>
+					<div id="logarithmicEquationEquationStep2" class="equationStep">log(10x⋅x)=3</div>
+					<div id="logarithmicEquationEquationStep3" class="equationStep">log(10x<p class="exponent">2</p>)=3</div>
+					<div id="logarithmicEquationEquationStep4" class="equationStep">10<p class="exponent">log(10x²)</p>=10<p class="exponent">3</p></div>
+					<div id="logarithmicEquationEquationStep5" class="equationStep">10x<p class="exponent">2</p>=1000</div>
+					<div id="logarithmicEquationEquationStep6" class="equationStep">x<p class="exponent">2</p>=100</div>
+					<div id="logarithmicEquationEquationStep7" class="equationStep">x=±10</div>
+					<div id="logarithmicEquationEquationStep8" class="equationStep">x=10</div>
+
+					<h1>Logarithmic Equation<h2 id="logarithmicEquationStep"></h2></h1>
+					<div id="logarithmicEquationStep1" class="step">To start solving a logarithmic equation, you should first combine all logarithmic functions on the same side into one equation. The same concept applies with subtraction, except the numbers are divided instead of multiplied.</div>
+					<div id="logarithmicEquationStep2" class="step">You then must make the two combined values into one by multiplying or dividing them together.</div>
+					<div id="logarithmicEquationStep3" class="step">Then make both sides the exponent of the logarithm's base value. If there is no base shown on the logarithm then it is 10.</div>
+					<div id="logarithmicEquationStep4" class="step">The logarithm exponent can be simplified to only the value inside it and the other side can be solved by finding 10 to the power of 3.</div>
+					<div id="logarithmicEquationStep5" class="step">The 1000 on the right side of the equation can then be divided by the 10 on the left side of the equation.</div>
+					<div id="logarithmicEquationStep6" class="step">The x to the second power can be solved by taking the square root of both sides, leaving a plus or minus 10 as the answer.</div>
+					<div id="logarithmicEquationStep7" class="step">Plugging both the positive and negative solutions back in to the equation shows that only the positive solution still works since logarithms cannot contain a negative.</div>
+
+					<button id="logarithmicEquationNext" onclick="next('logarithmicEquation', 7)">Next</button>
+				</div>
+			</div>
+
+			<div class="box" id="logarithmicEquation2" style="left: 100vw">
+				<div id="logarithmicEquation2Confirm" class="confirm">
+					<h1>Logarithmic Equation 2</h1>
+					<h2>5 Steps</h2>
+					<button onclick="start('logarithmicEquation2')" id="logarithmicEquation2Start" style="background-color: rgb(0, 209, 0)">Start</button>
+				</div>
+	
+				<div id="logarithmicEquation2Learn" class="learn">
+					<div id="logarithmicEquation2EquationStep1" class="equationStep">log<p class="base">6</p>(2x-4)+log<p class="base">6</p>(4)=log<p class="base">6</p>(40)</div>
+					<div id="logarithmicEquation2EquationStep2" class="equationStep">log<p class="base">6</p>(4⋅(2x-4))=log<p class="base">6</p>(40)</div>
+					<div id="logarithmicEquation2EquationStep3" class="equationStep">log<p class="base">6</p>(8x-16)=log<p class="base">6</p>(40)</div>
+					<div id="logarithmicEquation2EquationStep4" class="equationStep">8x-16=40</div>
+					<div id="logarithmicEquation2EquationStep5" class="equationStep">8x=56</div>
+					<div id="logarithmicEquation2EquationStep6" class="equationStep">x=7</div>
+	
+					<h1>Logarithmic Equation 2<h2 id="logarithmicEquation2Step"></h2></h1>
+					<div id="logarithmicEquation2Step1" class="step">This logarithmic equation must also be simplified by combining logarithms of the same base value on the same side.</div>
+					<div id="logarithmicEquation2Step2" class="step">The two values can then be multiplied together to form 8x-16.</div>
+					<div id="logarithmicEquation2Step3" class="step">log<p class="base">6</p> can then be divided by on both sides since they both have one logarithm with the same base value.</div>
+					<div id="logarithmicEquation2Step4" class="step">The 16 can then be added to the other side to give 56.</div>
+					<div id="logarithmicEquation2Step5" class="step">56 can then be divided by 8 to give 7, which works out when plugged back in to the equation.</div>
+					
+					<button id="logarithmicEquation2Next" onclick="next('logarithmicEquation2', 5)">Next</button>
+				</div>
+			</div>
+
+			<div class="box" id="exponentialEquation" style="left: 100vw">
+				<div id="exponentialEquationConfirm" class="confirm">
+					<h1>Exponential Equation</h1>
+					<h2>4 Steps</h2>
+					<button onclick="start('exponentialEquation')" id="exponentialEquationStart" style="background-color: rgb(0, 209, 0)">Start</button>
+				</div>
+
+				<div id="exponentialEquationLearn" class="learn">
+					<div id="exponentialEquationEquationStep1" class="equationStep">3<p class="exponent">x</p>-1=4</div>
+					<div id="exponentialEquationEquationStep2" class="equationStep">3<p class="exponent">x</p>=5</div>
+					<div id="exponentialEquationEquationStep3" class="equationStep">log(3<p class="exponent">x</p>)=log(5)</div>
+					<div id="exponentialEquationEquationStep4" class="equationStep">xlog(3)=log(5)</div>
+					<div id="exponentialEquationEquationStep5" class="equationStep">x=log(5)÷log(3)</div>
+		
+					<h1>Exponential Equation<h2 id="exponentialEquationStep"></h2></h1>
+					<div id="exponentialEquationStep1" class="step">To start solving an exponential equation, isolate the exponential parts of the equation to one side of the equation.</div>
+					<div id="exponentialEquationStep2" class="step">Take the log of both sides so that you can later remove the x from the exponential.</div>
+					<div id="exponentialEquationStep3" class="step">Move the x from the exponent of 3 to the beginning of the logarithm using the power property.</div>
+					<div id="exponentialEquationStep4" class="step">Isolate the x by dividing the logarithm to the other side of the equation, which can not be simplified further.</div>
+					
+					<button id="exponentialEquationNext" onclick="next('exponentialEquation', 4)">Next</button>
+				</div>
+			</div>
+
+			<div class="box" id="exponentialEquation2" style="left: 100vw">
+				<div id="exponentialEquation2Confirm" class="confirm">
+					<h1>Exponential Equation 2</h1>
+					<h2>4 Steps</h2>
+					<button onclick="start('exponentialEquation2')" id="exponentialEquation2Start" style="background-color: rgb(0, 209, 0)">Start</button>
+				</div>
+	
+				<div id="exponentialEquation2Learn" class="learn">
+					<div id="exponentialEquation2EquationStep1" class="equationStep">5<p class="exponent">2x</p>=21</div>
+					<div id="exponentialEquation2EquationStep2" class="equationStep">log<p class="base">5</p>(5<p class="exponent">2x</p>)=log<p class="base">5</p>(21)</div>
+					<div id="exponentialEquation2EquationStep3" class="equationStep">2x⋅log<p class="base">5</p>(5)=log<p class="base">5</p>(21)</div>
+					<div id="exponentialEquation2EquationStep4" class="equationStep">2x(1)=log<p class="base">5</p>(21)</div>
+					<div id="exponentialEquation2EquationStep5" class="equationStep">2x=log<p class="base">5</p>(21)</div>
+			
+					<h1>Exponential Equation 2<h2 id="exponentialEquation2Step"></h2></h1>
+					<div id="exponentialEquation2Step1" class="step">To start solving an exponential equation, isolate the exponential parts of the equation to one side of the equation.</div>
+					<div id="exponentialEquation2Step2" class="step">Take the log of both sides so that you can later remove the x from the exponential.</div>
+					<div id="exponentialEquation2Step3" class="step">Move the x from the exponent of 3 to the beginning of the logarithm using the power property.</div>
+					<div id="exponentialEquation2Step4" class="step">Isolate the x by dividing the logarithm to the other side of the equation, which can not be simplified further.</div>
+					
+					<button id="exponentialEquation2Next" onclick="next('exponentialEquation2', 4)">Next</button>
 				</div>
 			</div>
 		</div>
