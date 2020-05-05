@@ -14,7 +14,7 @@
 				<button onclick="moveTo('logarithmicEquation2')">Logarithmic Equation 2</button>
 				<button onclick="moveTo('exponentialEquation')">Exponential Equation</button>
 				<button onclick="moveTo('exponentialEquation2')">Exponential Equation 2</button>
-				<button onclick="moveTo('earthquakeEquation')">Earthquake Equation</button>
+				<button onclick="moveTo('soundIntensityEquation')">Sound Intensity Equation</button>
 			</div>
 
 			<div class="box" id="logarithmicEquation" style="left: 100vw">
@@ -123,29 +123,33 @@
 				</div>
 			</div>
 
-			<div class="box" id="earthquakeEquation" style="left: 100vw">
-				<div id="earthquakeEquationConfirm" class="confirm">
-					<h1>Earthquake Equation</h1>
-					<h2>5 Steps</h2>
-					<button onclick="start('earthquakeEquation')" id="earthquakeEquationStart" style="background-color: rgb(0, 209, 0)">Start</button>
+			<div class="box" id="soundIntensityEquation" style="left: 100vw">
+				<div id="soundIntensityEquationConfirm" class="confirm">
+					<h1>Sound Intensity Equation</h1>
+					<h2>7 Steps</h2>
+					<button onclick="start('soundIntensityEquation')" id="soundIntensityEquationStart" style="background-color: rgb(0, 209, 0)">Start</button>
 				</div>
 		
-				<div id="earthquakeEquationLearn" class="learn">
-					<div id="earthquakeEquationEquationStep1" class="equationStep">5<p class="exponent">2x</p>=21</div>
-					<div id="earthquakeEquationEquationStep2" class="equationStep">log<p class="base">5</p>(5<p class="exponent">2x</p>)=log<p class="base">5</p>(21)</div>
-					<div id="earthquakeEquationEquationStep3" class="equationStep">2x⋅log<p class="base">5</p>(5)=log<p class="base">5</p>(21)</div>
-					<div id="earthquakeEquationEquationStep4" class="equationStep">2x(1)=log<p class="base">5</p>(21)</div>
-					<div id="earthquakeEquationEquationStep5" class="equationStep">2x=log<p class="base">5</p>(21)</div>
-					<div id="earthquakeEquationEquationStep6" class="equationStep">x=log<p class="base">5</p>(21)÷2</div>
+				<div id="soundIntensityEquationLearn" class="learn">
+					<div id="soundIntensityEquationEquationStep1" class="equationStep">dB=10⋅log(I)</div>
+					<div id="soundIntensityEquationEquationStep2" class="equationStep">dB=10⋅log(400000000)</div>
+					<div id="soundIntensityEquationEquationStep3" class="equationStep">dB=10⋅8.60205</div>
+					<div id="soundIntensityEquationEquationStep4" class="equationStep">dB=86.021</div>
+					<div id="soundIntensityEquationEquationStep5" class="equationStep">140=10⋅log(I)</div>
+					<div id="soundIntensityEquationEquationStep6" class="equationStep">14=log(I)</div>
+					<div id="soundIntensityEquationEquationStep7" class="equationStep">10<p class="exponent">14</p>=10<p class="exponent">log(I)</p></div>
+					<div id="soundIntensityEquationEquationStep8" class="equationStep">10<p class="exponent">14</p>=I</div>
 				
-					<h1>Earthquake Equation<h2 id="earthquakeEquationStep"></h2></h1>
-					<div id="earthquakeEquationStep1" class="step">This exponential equation has all of the exponential parts isolate allready, so we can start by taking the log<p class="base">5</p> of each side.</p></div>
-					<div id="earthquakeEquationStep2" class="step">Again using the power property, the 2x can be removed from the exponential and put in front of the logarithm.</div>
-					<div id="earthquakeEquationStep3" class="step">Since the base of the logarithm is 5 and the value inside it is also 5, the left side can be simplified to 2x(1).</div>
-					<div id="earthquakeEquationStep4" class="step">The left side can then be simplified further to 2x by multiplying by 1.</div>
-					<div id="earthquakeEquationStep5" class="step">log<p class="base">5</p>(21) can then be divided by 2 to isolate x. This cannot be simplified further without creating a decimal.</div>
-						
-					<button id="earthquakeEquationNext" onclick="next('earthquakeEquation', 4)">Next</button>
+					<h1>Sound Intensity Equation<h2 id="soundIntensityEquationStep"></h2></h1>
+					<div id="soundIntensityEquationStep1" class="step">Solving for decibels (dB) can be done by multiplying the log of Intensity (I) by 10. For example what if the intensity was 400 million?</div>
+					<div id="soundIntensityEquationStep2" class="step">First you would take the log of 400 million, leaving only 8.60205.</div>
+					<div id="soundIntensityEquationStep3" class="step">You would then multiply 8.60205 by 10 and be left with the answer.</div>
+					<div id="soundIntensityEquationStep4" class="step">In the opposite direction, you could have a decibel value of 140.</div>
+					<div id="soundIntensityEquationStep5" class="step">The first thing to do in this equation is to divide 140 by 10 to get the logarithm on its own.</div>
+					<div id="soundIntensityEquationStep6" class="step">The next step in solving this equation would be to exponentiate both sides by a base of 10 since the logarithm has a base of 10.</div>
+					<div id="soundIntensityEquationStep7" class="step">Finally, 10<p class="exponent">log(I)</p> can be simplified to just I which makes the intensity 10<p class="exponent">14</p>.</div>
+
+					<button id="soundIntensityEquationNext" onclick="next('soundIntensityEquation', 7)">Next</button>
 				</div>
 			</div>
 		</div>
